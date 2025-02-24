@@ -1,0 +1,70 @@
+canvas {
+  box-shadow: rgba(0, 0, 0,0.3) 0px 20px 30px -10px;
+}
+
+/* Apply a sans-serif font to the entire page */
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: red;
+        font-family: sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      /* Container for canvas and start button */
+      #gameContainer {
+        position: relative;
+        width: 480px;
+        height: 720px;
+      }
+      /* The game canvas without a border */
+      canvas {
+        background-color: red;
+        display: block;
+      }
+      /* Centered start button styling */
+      #centerButton {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        color: red;
+        border: 2px solid red;
+        border-radius: 0;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        z-index: 10;
+      }
+      /* Overlay styling for end-of-game messages */
+      #overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 480px;
+        height: 720px;
+        background-color: rgba(0, 0, 0, 0.3);
+        display: none;
+        justify-content: center;
+        align-items: center;
+        z-index: 20;
+      }
+      #overlayContent {
+        text-align: center;
+        color: white;
+      }
+      #overlayContent h1 {
+        margin-bottom: 20px;
+      }
+      #playAgainButton {
+        background-color: white;
+        color: red;
+        border: 2px solid red;
+        border-radius: 0;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+      }
